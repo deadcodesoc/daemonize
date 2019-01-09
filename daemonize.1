@@ -1,0 +1,33 @@
+.\" Manpage for daemonize(1)
+.Dd May 13, 2012
+.Dt DAEMONIZE 1
+.Os
+.Sh NAME
+.Nm daemonize
+.Nd Daemonize a program
+.Sh SYNOPSIS
+.Nm
+.Op Fl help
+.Op Fl version
+.Op Fl nochdir
+.Op Fl noclose
+.Op program
+.Op args
+.Sh DESCRIPTION
+The
+.Nm
+utility takes a path to a program and then run in daemon mode (in background).
+.Pp
+The options are as follows:
+.Bl -tag -width indent
+.It Fl help
+Print help on screen and exit
+.It Fl version
+Print version and exit
+.It Fl nochdir
+Does not change to directory /
+.It Fl noclose
+Does not close stdin, stdout and stderr
+.El
+.Sh SEE ALSO
+.Xr daemon 3
